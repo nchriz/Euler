@@ -15,8 +15,6 @@ def main():
         fib.append(fib[i-1] + fib[i-2])
         sum += fib[i] if (fib[i]%2)==0 else 0
 
-    #for x in xrange(0,i):
-        #sum += fib[x] if (fib[x]%2)==0 else 0
     print(sum)
 
 if __name__ == "__main__":

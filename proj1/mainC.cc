@@ -1,22 +1,15 @@
-//#include <iostream>
-//using namespace std;
+#include <iostream>
 
-#include <stdio.h>
+using namespace std;
 
 int main(void){
-  int i = 1000;
-  int a = 3, b = 5;
+  int j;
   int sum = 0;
 
-  for(int j = 0; j < i; j++){
-    if((a%j)==0)
-      sum += j;
-    else if((b%j)==0)
-      sum += j;
-  }
-  //std::cout<<sum;
-  printf("%d", sum);
+  for(j = 0; j < 1000; j++){
+    sum += ((j%3)==0 || (j%5)==0) ? j : 0;
 
-  return 0;
+  }
+  cout<<sum;
 
 }
