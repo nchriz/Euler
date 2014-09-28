@@ -12,9 +12,6 @@ public class mainJ{
 	    if(primes[can])
 		for(int j = 2*can; j < n; j+=can)
 		    primes[j]=false;
-
-	//for(int i = 0; i < n; i++)
-	//    System.out.println(primes[i] + " + " + i);
 	
 	return primes;
     }
@@ -30,7 +27,7 @@ public class mainJ{
 		num[tmp] = i;
 		tmp++;
 	    }
-	System.out.println(num[10001]);
+	System.out.println(num[10000]);
 	System.out.println(System.currentTimeMillis()-start);
 		
     }
