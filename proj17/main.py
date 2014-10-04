@@ -25,9 +25,12 @@ def main():
     for x in range(0,1000):
         s, t, h = split(x)
         tmp = 0
+        hundred = 0
         if h > 0:
             #print h
-            tmp += wordcount[str(h)] + 7 + 3
+            tmp += wordcount[str(h)] + 7
+            if t > 0 or s > 0:
+                tmp += 3
         if t > 0:
             #print t
             tmp += wordcount[str(t*10)]
