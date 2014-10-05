@@ -3,7 +3,7 @@ from time import *
 
 def main():
     start = time()
-    n = 10**6
+    n = 10**5
     sum = 0
     num = [1] *n
     for x in range(2,int(n/2)):
