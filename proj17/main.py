@@ -25,7 +25,6 @@ def main():
     for x in range(0,1000):
         s, t, h = split(x)
         tmp = 0
-        hundred = 0
         if h > 0:
             #print h
             tmp += wordcount[str(h)] + 7
